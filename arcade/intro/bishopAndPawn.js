@@ -18,7 +18,6 @@ solution(bishop, pawn) = false.
 
 */
 
-
 function solution(bishop, pawn) {
 	return (
 		Math.abs(bishop.charCodeAt(0) - pawn.charCodeAt(0)) ==
