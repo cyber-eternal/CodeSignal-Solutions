@@ -12,10 +12,10 @@ solution(n) = 101.
 */
 
 function solution(n) {
-	const m = 0;
-	for (let d = 1; d <= n; d *= 10) {
-		const t = (n % d) + Math.floor(Math.floor(n / d) / 10) * d;
-		m = Math.max(m, t);
-	}
-	return m;
+    let m = 0;
+    for(let d = 1; d <= n; d *= 10){
+        const t = n % d + (Math.floor(Math.floor(n/d) / 10) * d)
+        m = Math.max(m, t);
+    }
+    return m;
 }
